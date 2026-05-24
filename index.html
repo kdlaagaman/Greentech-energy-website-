@@ -1,0 +1,399 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================================
+       Greentech Energy Pvt. Ltd. — Official Website
+       Theme: Light teal/blue/white (from design reference)
+       Content: Full content with all details
+       Contact: greentechenergy321@gmail.com | 9840042961
+       Location: 27°40'30.5"N 85°18'23.6"E (27.6751384, 85.306554)
+       ============================================================ -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greentech Energy Pvt. Ltd. — Rooftop Solar for Nepal's Industries</title>
+
+  <!-- Tabler Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION BAR
+       ============================================================ -->
+  <nav>
+    <!-- Logo — loads -->
+    <div class="logo" onclick="go('home')">
+      <img class="logo-img" id="logo-img"
+        src="logo.jpg"
+        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2244%22 height=%2244%22%3E%3Ccircle cx=%2222%22 cy=%2222%22 r=%2222%22 fill=%22%230d7a6e%22/%3E%3Ctext x=%2222%22 y=%2229%22 font-size=%2218%22 text-anchor=%22middle%22 fill=%22white%22 font-weight=%22bold%22%3EG%3C/text%3E%3C/svg%3E'"
+        alt="Greentech Energy Logo">
+      <div>
+        <div class="logo-name">Greentech Energy</div>
+        <div class="logo-tag">Pvt. Ltd. · Nepal</div>
+      </div>
+    </div>
+
+    <!-- Desktop links -->
+    <div class="nav-links">
+      <a onclick="go('home')" id="nl-home" class="act">Home</a>
+      <a onclick="go('about')" id="nl-about">About</a>
+      <a onclick="go('vision')" id="nl-vision">Vision</a>
+      <a onclick="go('services')" id="nl-services">Services</a>
+      <a onclick="go('location')" id="nl-location">Location</a>
+      <a onclick="go('contact')" id="nl-contact">Contact</a>
+    </div>
+
+    <button class="nav-cta" onclick="go('contact')">Free audit →</button>
+
+    <!-- Hamburger (mobile) -->
+    <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ============================================================
+       MOBILE DRAWER MENU
+       ============================================================ -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a onclick="go('home');closeMenu()" id="ml-home" class="act">Home</a>
+    <a onclick="go('about');closeMenu()" id="ml-about">About</a>
+    <a onclick="go('vision');closeMenu()" id="ml-vision">Vision</a>
+    <a onclick="go('services');closeMenu()" id="ml-services">Services</a>
+    <a onclick="go('location');closeMenu()" id="ml-location">Location</a>
+    <a onclick="go('contact');closeMenu()" id="ml-contact">Contact</a>
+    <button class="m-cta" onclick="go('contact');closeMenu()">Book free energy audit →</button>
+  </div>
+
+  <!-- ============================================================
+       PAGE: HOME
+       ============================================================ -->
+  <div id="pg-home" class="page on">
+
+    <!-- Hero -->
+    <div class="hero">
+      <div class="hero-pill"><i class="ti ti-leaf"></i> Industrial solar · Made for Nepal</div>
+      <h1>Cut your energy bill<br>by up to <em>90%</em> —<br>powered by Nepal's sun.</h1>
+      <p>Greentech Energy delivers complete rooftop solar for Nepal's industries and businesses. From free audit to installation, financing, and 25 years of guaranteed savings.</p>
+      <div class="hero-btns">
+        <button class="btn-white" onclick="go('contact')">Get free energy audit →</button>
+        <button class="btn-ghost-white" onclick="go('services')">Explore our services</button>
+      </div>
+      <div class="hero-stats">
+        <div class="hs"><div class="hs-n">90%</div><div class="hs-l">Max bill reduction</div></div>
+        <div class="hs"><div class="hs-n">4–7 yrs</div><div class="hs-l">Avg payback period</div></div>
+        <div class="hs"><div class="hs-n">100%</div><div class="hs-l">Bank financing</div></div>
+        <div class="hs"><div class="hs-n">25+ yrs</div><div class="hs-l">System lifetime</div></div>
+        <div class="hs"><div class="hs-n">6.5%</div><div class="hs-l">Green loan p.a.</div></div>
+      </div>
+    </div>
+
+    <!-- Animated ticker -->
+    <div class="mq">
+      <div class="mq-inner">
+        <span>300+ sunny days</span><span>Free energy audit</span><span>AEPC subsidy</span><span>100% bank financing</span><span>25-yr panel warranty</span><span>2 yrs free aftercare</span><span>Net metering with NEA</span><span>Zero upfront cost possible</span>
+        <span>300+ sunny days</span><span>Free energy audit</span><span>AEPC subsidy</span><span>100% bank financing</span><span>25-yr panel warranty</span><span>2 yrs free aftercare</span><span>Net metering with NEA</span><span>Zero upfront cost possible</span>
+      </div>
+    </div>
+
+    <!-- Photo gallery: solar panels, battery storage, installation -->
+    <div class="photo-strip">
+      <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop" alt="Rooftop solar panels on industrial building" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?q=80&w=800&auto=format&fit=crop" alt="Solar energy battery storage system" loading="lazy">
+      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=800&auto=format&fit=crop" alt="Solar panel installation team on rooftop" loading="lazy">
+    </div>
+
+    <!-- The Problem -->
+    <div class="sec-light">
+      <div class="lbl">The problem</div>
+      <div class="ttl">Nepal's grid is draining your profits</div>
+      <div class="sub">Rising NEA tariffs, unpredictable load-shedding, and costly diesel generators are silently destroying your margins every single day.</div>
+      <div class="prob-grid">
+        <div class="pc"><div class="pc-n">35<span class="pc-u">–40%</span></div><div class="pc-l">NEA tariff increase over the last decade — and rising further every year</div></div>
+        <div class="pc"><div class="pc-n">NPR 18<span class="pc-u">–25</span></div><div class="pc-l">Cost per unit from diesel generators vs NPR 4–6 per unit from solar</div></div>
+        <div class="pc"><div class="pc-n">8<span class="pc-u">–12 hrs</span></div><div class="pc-l">Average weekly load-shedding causing production downtime and machinery risk</div></div>
+        <div class="pc"><div class="pc-n">NPR 3<span class="pc-u">–8L</span></div><div class="pc-l">Annual diesel generator fuel costs for a typical mid-sized Nepali business</div></div>
+      </div>
+      <div class="note-box"><p>Nepal's industrial electricity tariff currently ranges from <strong>NPR 9.50 to NPR 13+ per kWh</strong>, with demand charges adding further burden — costs that solar can dramatically eliminate from your monthly overheads.</p></div>
+    </div>
+
+    <!-- The Solution -->
+    <div class="sec">
+      <div class="lbl">The solution</div>
+      <div class="ttl">Solar that pays for itself from day one</div>
+      <div class="sub">We eliminate your energy problem completely — from site audit to 25 years of guaranteed clean energy, every step managed by our team.</div>
+      <div class="sol-grid">
+        <div class="sc"><div class="sc-ico"><i class="ti ti-clipboard-list"></i></div><h3>Free energy audit</h3><p>Certified engineers visit your facility, analyse consumption patterns, rooftop area, shading, and structural capacity. You receive a full Solar Feasibility Report showing projected savings, system size, and ROI — completely free.</p><span class="sc-pill">Zero cost · Zero obligation</span></div>
+        <div class="sc"><div class="sc-ico"><i class="ti ti-coin"></i></div><h3>AEPC subsidy + 100% financing</h3><p>AEPC provides direct government subsidies on commercial solar. Our financial consultants secure every rupee of subsidy you qualify for and arrange green energy loans at 6.5% per annum — zero upfront cost for qualifying businesses.</p><span class="sc-pill">6.5% p.a. · Up to 100% financed</span></div>
+        <div class="sc"><div class="sc-ico"><i class="ti ti-solar-panel"></i></div><h3>Professional installation</h3><p>Our certified technical team designs and commissions your system to the highest quality standards, on schedule. We handle all NEA net-metering arrangements and grid connection coordination on your behalf.</p><span class="sc-pill">Certified engineers</span></div>
+        <div class="sc"><div class="sc-ico"><i class="ti ti-settings"></i></div><h3>2 years free aftercare</h3><p>Post-installation, our team provides comprehensive after-sales support for two full years at no charge — maintenance, performance monitoring, panel cleaning, inverter checks, and rapid-response troubleshooting.</p><span class="sc-pill">2 years · No hidden charges</span></div>
+      </div>
+      <div class="note-box"><p>Nepal's net metering policy allows businesses to <strong>sell surplus solar energy back to NEA</strong>, turning your rooftop into an additional revenue stream on low-consumption days.</p></div>
+    </div>
+
+    <!-- How it works -->
+    <div class="sec-light">
+      <div class="lbl">How it works</div>
+      <div class="ttl">From audit to savings in 4 steps</div>
+      <div class="steps">
+        <div class="step"><div class="step-n">01</div><h3>Free energy audit</h3><p>Our engineers assess your facility and deliver a no-obligation Solar Feasibility Report with savings and ROI projections.</p></div>
+        <div class="step"><div class="step-n">02</div><h3>Financial planning</h3><p>We secure your AEPC subsidy, structure bank financing at 6.5% p.a., and present a complete financial model for your business.</p></div>
+        <div class="step"><div class="step-n">03</div><h3>Installation</h3><p>Our certified technical team installs and commissions your system to the highest quality standards, on schedule.</p></div>
+        <div class="step"><div class="step-n">04</div><h3>Savings begin</h3><p>From your first billing cycle, electricity costs drop dramatically. Your rooftop is now your power plant generating free energy.</p></div>
+      </div>
+    </div>
+
+    <!-- Testimonials placeholder — TODO: replace with real quotes -->
+    <div class="sec-soft">
+      <div class="lbl">Client testimonials</div>
+      <div class="ttl">What our clients say</div>
+      <div class="sub">Hear from Nepal's industries who have made the switch to solar with Greentech Energy.</div>
+      <div class="testi-grid">
+        <div class="testi-card"><div class="testi-icon"><i class="ti ti-quote"></i></div><div class="testi-placeholder">Client testimonial coming soon</div><div class="testi-sub">— Name, Company</div></div>
+        <div class="testi-card"><div class="testi-icon"><i class="ti ti-quote"></i></div><div class="testi-placeholder">Client testimonial coming soon</div><div class="testi-sub">— Name, Company</div></div>
+        <div class="testi-card"><div class="testi-icon"><i class="ti ti-quote"></i></div><div class="testi-placeholder">Client testimonial coming soon</div><div class="testi-sub">— Name, Company</div></div>
+      </div>
+    </div>
+
+    <!-- CTA band -->
+    <div class="cta-strip">
+      <h2>Your rooftop is generating zero value right now. Let's change that.</h2>
+      <button class="btn-cta-white" onclick="go('contact')">Book free energy audit →</button>
+    </div>
+
+  </div><!-- end HOME -->
+
+  <!-- ============================================================
+       PAGE: ABOUT US
+       ============================================================ -->
+  <div id="pg-about" class="page">
+    <div class="sec" style="padding-bottom:1.5rem;">
+      <div class="lbl">Who we are</div>
+      <div class="ttl" style="font-size:clamp(24px,4vw,38px);">Nepal's dedicated industrial solar partner</div>
+      <div class="sub">We don't just sell solar panels — we deliver a complete, end-to-end energy transformation and stand by your business for 25 years.</div>
+    </div>
+    <div class="sec-light" style="padding-top:2rem;">
+      <div class="about-cols">
+        <div class="a-txt">
+          <p>Greentech Energy Pvt. Ltd. was built with a single mission: to transform how Nepal's industries power themselves. Nepal stands at an energy crossroads — as industries grow and electricity demands surge, forward-thinking businesses are turning to the most abundant resource available: the Himalayan sun.</p>
+          <p>We are not a transactional vendor. We are a long-term energy partner, committed to your success from the very first site visit to the final year of your system's 25-year operational life. We invest in continuous training, cutting-edge technology partnerships, and local workforce development to deliver world-class solar solutions built specifically for Nepal's climate, regulatory environment, and business needs.</p>
+          <p>We work hand-in-hand with AEPC, NEA, and leading Nepali financial institutions — including Nepal Investment Mega Bank, Nabil Bank, and others — to ensure every client receives maximum subsidy benefits, optimal financing, and a system designed precisely for Nepal's conditions.</p>
+          <p>From manufacturers, hotels, and hospitals to commercial enterprises — if your business has a rooftop, we can turn it into a power plant that delivers returns for decades.</p>
+        </div>
+        <div class="a-vals">
+          <div class="av"><i class="ti ti-shield-check"></i><div><div class="av-t">Long-term energy partner</div><div class="av-d">Not just an equipment supplier — your dedicated energy advisor for the full 25-year system life.</div></div></div>
+          <div class="av"><i class="ti ti-tools"></i><div><div class="av-t">End-to-end service</div><div class="av-d">Audit → subsidy → financing → installation → 2 years of free aftercare. Everything handled.</div></div></div>
+          <div class="av"><i class="ti ti-map-pin"></i><div><div class="av-t">Built specifically for Nepal</div><div class="av-d">Designed for Nepal's climate, grid infrastructure, AEPC regulations, and business environment.</div></div></div>
+          <div class="av"><i class="ti ti-certificate"></i><div><div class="av-t">Industry-leading warranties</div><div class="av-d">25-year panel performance warranty, 2-year inverter and battery, 1-year mounting structures.</div></div></div>
+          <div class="av"><i class="ti ti-world"></i><div><div class="av-t">Committed to Nepal</div><div class="av-d">Proud contributor to Nepal's NDC renewable energy targets and national energy independence.</div></div></div>
+        </div>
+      </div>
+      <div class="a-nums">
+        <div class="an"><div class="an-n">300+</div><div class="an-l">Sunny days per year in Nepal</div></div>
+        <div class="an"><div class="an-n">6.8 hrs</div><div class="an-l">Peak sun hours daily</div></div>
+        <div class="an"><div class="an-n">NPR 41L</div><div class="an-l">Annual savings typical factory</div></div>
+        <div class="an"><div class="an-n">5.5 yrs</div><div class="an-l">ROI payback case study</div></div>
+      </div>
+    </div>
+    <div class="cta-strip">
+      <h2>Ready to see what solar can do for your business?</h2>
+      <button class="btn-cta-white" onclick="go('contact')">Get your free audit →</button>
+    </div>
+  </div><!-- end ABOUT -->
+
+  <!-- ============================================================
+       PAGE: OUR VISION
+       ============================================================ -->
+  <div id="pg-vision" class="page">
+    <div class="sec" style="padding-bottom:1.5rem;">
+      <div class="lbl">Our vision</div>
+      <div class="ttl" style="font-size:clamp(24px,4vw,38px);">A solar-powered Nepal —<br>one rooftop at a time</div>
+      <div class="sub">We envision a Nepal where every industrial rooftop generates its own clean, affordable energy — where Nepali industries compete globally not despite their energy costs, but because of their energy advantages.</div>
+    </div>
+    <div class="sec-teal">
+      <div class="vis-3">
+        <div class="v3"><div class="v3-n">01</div><h3>Leading Nepal's industrial energy transition</h3><p>We are committed to becoming Nepal's most trusted rooftop solar partner — not just as an equipment supplier, but as a long-term energy advisor. We invest in continuous training, cutting-edge technology partnerships, and local workforce development to deliver world-class solutions built for Nepal's climate and business environment.</p></div>
+        <div class="v3"><div class="v3-n">02</div><h3>Empowering businesses with energy sovereignty</h3><p>Our mission goes beyond individual projects. By helping hundreds of Nepali businesses achieve energy independence, we collectively reduce Nepal's dependency on imported fossil fuels, strengthen the national trade balance, and build an industrial sector that is resilient, competitive, and future-ready. Every business that goes solar strengthens the entire Nepali economy.</p></div>
+        <div class="v3"><div class="v3-n">03</div><h3>Contributing to a sustainable & prosperous Nepal</h3><p>Nepal has the natural resources, the policy framework, and the entrepreneurial spirit to become a renewable energy powerhouse in South Asia. We are proud to work alongside AEPC, NEA, financial institutions, and industry associations to accelerate adoption and ensure clean energy benefits reach every corner of Nepal's business community.</p></div>
+      </div>
+      <div style="margin-top:2.5rem;">
+        <div class="lbl" style="color:rgba(255,255,255,0.6);">Environmental & social impact</div>
+        <div class="ttl ttl-white">Every installation changes Nepal</div>
+        <div class="impact-row">
+          <div class="ir"><div class="ir-n">80–100t</div><div class="ir-l">CO₂ offset per 100 kWp per year</div></div>
+          <div class="ir"><div class="ir-n">4,000+</div><div class="ir-l">Equivalent trees per system per year</div></div>
+          <div class="ir"><div class="ir-n">2,000t</div><div class="ir-l">Carbon prevented over 25-year life</div></div>
+          <div class="ir"><div class="ir-n">15%</div><div class="ir-l">Nepal NDC renewable target 2030</div></div>
+        </div>
+        <div class="ndc-box"><p>Nepal has committed under its NDC to achieving <strong>15% renewable energy in its total energy mix by 2030</strong>. Every Greentech installation directly advances this national goal — while delivering strong financial returns to your business. Solar adoption also unlocks competitive advantages: international buyers increasingly require documented green energy credentials from their Nepali suppliers.</p></div>
+      </div>
+    </div>
+  </div><!-- end VISION -->
+
+  <!-- ============================================================
+       PAGE: SERVICES
+       ============================================================ -->
+  <div id="pg-services" class="page">
+    <div class="sec" style="padding-bottom:1.5rem;">
+      <div class="lbl">What we offer</div>
+      <div class="ttl" style="font-size:clamp(24px,4vw,38px);">Complete end-to-end solar solutions</div>
+      <div class="sub">Every service designed to maximise your investment, minimise risk, and ensure your solar system performs at peak efficiency for its entire 25-year operational life.</div>
+    </div>
+    <div class="sec-light" style="padding-top:2rem;">
+      <div class="svc-grid">
+        <div class="sv"><div class="sv-ico"><i class="ti ti-clipboard-list"></i></div><h3>Free energy audit & feasibility report</h3><p>Our certified energy engineers conduct a thorough assessment of your facility — analysing current consumption patterns, tariff structures, rooftop area, shading, and structural load capacity. We deliver a detailed Solar Feasibility Report at zero cost, showing your projected savings, recommended system size, and expected ROI before you spend a single rupee.</p><span class="sv-tag">100% Free · No obligation</span></div>
+        <div class="sv"><div class="sv-ico"><i class="ti ti-coin"></i></div><h3>Financial consultation & AEPC subsidy</h3><p>Our dedicated financial advisory team handles everything — from identifying all applicable AEPC subsidies to preparing loan documentation and liaising with lenders. Partner banks offer up to 100% project financing with no down payment, interest rates as low as 6.5% p.a., and flexible repayment tenors of 5–10 years aligned with your cash flow.</p><span class="sv-tag">Up to 100% financing · 6.5% p.a.</span></div>
+        <div class="sv"><div class="sv-ico"><i class="ti ti-tool"></i></div><h3>Design & installation</h3><p>Our certified technical team installs and commissions your system to the highest quality standards, on schedule. We coordinate all NEA net-metering arrangements and grid connection paperwork on your behalf, handling every regulatory and technical requirement so you can focus entirely on your business.</p><span class="sv-tag">Certified technical team</span></div>
+        <div class="sv"><div class="sv-ico"><i class="ti ti-settings"></i></div><h3>2 years free after-sales service</h3><p>Post-installation, our technical team provides comprehensive after-sales support for two full years at no charge — scheduled preventive maintenance, system performance monitoring, panel cleaning, inverter checks, and rapid-response troubleshooting. No hidden charges, no service call fees.</p><span class="sv-tag">2 years · Fully free</span></div>
+        <div class="sv"><div class="sv-ico"><i class="ti ti-battery-charging"></i></div><h3>Battery storage & net metering</h3><p>Combined with battery storage or net-metering arrangements with NEA, businesses can maintain near-uninterrupted operations and completely eliminate diesel generator dependency. Nepal's net metering policy allows you to sell surplus solar energy back to NEA, turning your rooftop into an additional revenue stream.</p><span class="sv-tag">Sell surplus back to NEA</span></div>
+        <div class="sv"><div class="sv-ico"><i class="ti ti-shield"></i></div><h3>Industry-leading warranties</h3><p>We stand behind every component of your solar system with warranties that protect your investment for decades — giving you complete peace of mind throughout the system's entire operational life.</p>
+          <div class="w-row">
+            <div class="wr"><div class="wr-n">25 yrs</div><div class="wr-t">Panel performance</div><div class="wr-d">Industry-leading</div></div>
+            <div class="wr"><div class="wr-n">2 yrs</div><div class="wr-t">Inverter & battery</div><div class="wr-d">Full coverage</div></div>
+            <div class="wr"><div class="wr-n">1 yr</div><div class="wr-t">Mounting structures</div><div class="wr-d">All hardware</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cta-strip">
+      <h2>Free audit · AEPC subsidy · 100% financing · 25-year warranty. All included.</h2>
+      <button class="btn-cta-white" onclick="go('contact')">Start today →</button>
+    </div>
+  </div><!-- end SERVICES -->
+
+  <!-- ============================================================
+       PAGE: LOCATION
+       Real coordinates: 27.6751384, 85.306554
+       ============================================================ -->
+  <div id="pg-location" class="page">
+    <div class="sec" style="padding-bottom:1.5rem;">
+      <div class="lbl">Find us</div>
+      <div class="ttl" style="font-size:clamp(24px,4vw,38px);">Based in Nepal, serving Nepal's industries</div>
+      <div class="sub">We serve industries and businesses across Nepal's key industrial zones — from the Kathmandu Valley to the Terai industrial belt and mid-hill regions.</div>
+    </div>
+    <div class="sec-light" style="padding-top:2rem;">
+
+      <!-- Info cards with real contact details -->
+      <div class="loc-cards">
+        <div class="lc"><div class="lc-lbl"><i class="ti ti-building"></i>Head office</div><div class="lc-v">Kathmandu, Nepal</div><div class="lc-s">27°40'30.5"N 85°18'23.6"E</div></div>
+        <div class="lc"><div class="lc-lbl"><i class="ti ti-clock"></i>Office hours</div><div class="lc-v">Sunday – Friday</div><div class="lc-s">10:00 AM – 5:00 PM</div></div>
+        <div class="lc"><div class="lc-lbl"><i class="ti ti-phone"></i>Phone</div><div class="lc-v">9840042961</div><div class="lc-s">Same-day consultation</div></div>
+        <div class="lc"><div class="lc-lbl"><i class="ti ti-mail"></i>Email</div><div class="lc-v">greentechenergy321@gmail.com</div><div class="lc-s">Audit requests welcome</div></div>
+      </div>
+
+      <!-- Google Maps embed — exact provided coordinates -->
+      <div class="map-embed">
+        <iframe
+          title="Greentech Energy Location — Kathmandu, Nepal"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d883.7!2d85.3039791!3d27.6751384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb154b4b3a6b5f%3A0x0!2zMjfCsDQwJzMwLjUiTiA4NcKwMTgnMjMuNiJF!5e0!3m2!1sen!2snp!4v1700000000000!5m2!1sen!2snp"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+      <!-- Service areas -->
+      <div class="lbl">Service areas</div>
+      <div class="sub" style="margin-bottom:1rem;">Serving industrial and commercial clients across Nepal's key solar zones:</div>
+      <div class="areas">
+        <span class="area">Kathmandu Valley</span>
+        <span class="area">Hetauda Industrial Corridor</span>
+        <span class="area">Biratnagar</span>
+      </div>
+
+    </div>
+  </div><!-- end LOCATION -->
+
+  <!-- ============================================================
+       PAGE: CONTACT
+       Real email: greentechenergy321@gmail.com
+       Real phone: 9840042961
+       ============================================================ -->
+  <div id="pg-contact" class="page">
+    <div class="sec" style="padding-bottom:1.5rem;">
+      <div class="lbl">Get in touch</div>
+      <div class="ttl" style="font-size:clamp(24px,4vw,38px);">Book your free energy audit</div>
+      <div class="sub">Our engineers visit your facility, assess your rooftop, and deliver a detailed Solar Feasibility Report — completely free, no strings attached.</div>
+    </div>
+    <div class="sec-light" style="padding-top:2rem;">
+      <div class="contact-grid">
+
+        <!-- Left: contact info -->
+        <div>
+          <div class="ci-cards">
+            <div class="ci"><div class="ci-ico"><i class="ti ti-phone"></i></div><div><div class="ci-lbl">Phone</div><div class="ci-val"><a href="tel:9840042961">9840042961</a></div></div></div>
+            <div class="ci"><div class="ci-ico"><i class="ti ti-mail"></i></div><div><div class="ci-lbl">Email</div><div class="ci-val"><a href="mailto:greentechenergy321@gmail.com">greentechenergy321@gmail.com</a></div></div></div>
+            <div class="ci"><div class="ci-ico"><i class="ti ti-map-pin"></i></div><div><div class="ci-lbl">Address</div><div class="ci-val">Kathmandu, Nepal</div></div></div>
+            <div class="ci"><div class="ci-ico"><i class="ti ti-clock"></i></div><div><div class="ci-lbl">Hours</div><div class="ci-val">Sun – Fri, 10 AM – 5 PM</div></div></div>
+          </div>
+          <div class="audit-box">
+            <h4>What's included in your free audit</h4>
+            <p>Rooftop assessment · Consumption analysis · System size recommendation · Projected ROI · AEPC subsidy eligibility · Financing options — all at zero cost, no obligation.</p>
+          </div>
+        </div>
+
+        <!-- Right: contact form -->
+        <div class="form">
+          <div class="form-row">
+            <input type="text" placeholder="Your name">
+            <input type="text" placeholder="Company name">
+          </div>
+          <div class="form-row">
+            <input type="email" placeholder="Email address">
+            <input type="tel" placeholder="Phone number">
+          </div>
+          <select>
+            <option value="">Type of business</option>
+            <option>Manufacturing / Factory</option>
+            <option>Hotel / Hospitality</option>
+            <option>Hospital / Healthcare</option>
+            <option>Commercial building</option>
+            <option>Educational institution</option>
+            <option>Other</option>
+          </select>
+          <input type="text" placeholder="Approximate monthly electricity bill (NPR)">
+          <textarea placeholder="Tell us about your facility or any specific questions..."></textarea>
+          <button class="form-btn" onclick="alert('Thank you! Our team will contact you within 24 hours to schedule your free energy audit.')">Book free energy audit →</button>
+        </div>
+
+      </div>
+    </div>
+  </div><!-- end CONTACT -->
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div>
+      <div class="f-logo-row">
+        <!-- Footer logo — same image as navbar -->
+        <img class="f-logo-img"
+          src="logo.jpg"
+          onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%2234%22 height=%2234%22%3E%3Ccircle cx=%2217%22 cy=%2217%22 r=%2217%22 fill=%22%230d7a6e%22/%3E%3Ctext x=%2217%22 y=%2222%22 font-size=%2214%22 text-anchor=%22middle%22 fill=%22white%22 font-weight=%22bold%22%3EG%3C/text%3E%3C/svg%3E'"
+          alt="Greentech Energy Logo">
+        <div class="f-name">Greentech Energy Pvt. Ltd.</div>
+      </div>
+      <div class="f-sub">Harnessing the Sun · Powering Nepal's Future · © 2026</div>
+    </div>
+    <div class="f-links">
+      <a onclick="go('home')">Home</a>
+      <a onclick="go('about')">About</a>
+      <a onclick="go('vision')">Vision</a>
+      <a onclick="go('services')">Services</a>
+      <a onclick="go('location')">Location</a>
+      <a onclick="go('contact')">Contact</a>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+       go(id)       — switches page, updates active nav links
+       toggleMenu() — opens/closes mobile hamburger drawer
+       closeMenu()  — closes mobile drawer
+       ============================================================ -->
+  <script src="script.js"></script>
+
+</body>
+</html>
