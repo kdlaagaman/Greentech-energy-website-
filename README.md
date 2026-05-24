@@ -14,9 +14,7 @@ This is a responsive website for Greentech Energy Pvt. Ltd., a solar energy comp
 - CSS
 - JavaScript
 
-## Contact
-Email: greentechenergy321@gmail.com  
-Phone: 9840042961
+
 
 ## Purpose
 To showcase industrial rooftop solar solutions and generate leads for free energy audits.
