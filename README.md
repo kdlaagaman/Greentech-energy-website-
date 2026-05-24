@@ -1,2 +1,22 @@
-# Greentech-energy-website-
-Greentech Energy Pvt. Ltd. is a modern responsive website designed for showcasing industrial rooftop solar solutions in Nepal. The site includes company information, services, vision, contact form, and location map, optimized for both desktop and mobile devices.
+# Greentech Energy Pvt. Ltd. Website
+
+This is a responsive website for Greentech Energy Pvt. Ltd., a solar energy company based in Nepal.
+
+## Features
+- Responsive design for mobile and desktop
+- Navigation system with multiple sections
+- Services, Vision, About, Location, and Contact pages
+- Embedded Google Maps location
+- Contact form for free energy audit requests
+
+## Tech Used
+- HTML
+- CSS
+- JavaScript
+
+## Contact
+Email: greentechenergy321@gmail.com  
+Phone: 9840042961
+
+## Purpose
+To showcase industrial rooftop solar solutions and generate leads for free energy audits.
